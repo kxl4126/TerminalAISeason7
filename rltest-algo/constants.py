@@ -5,7 +5,7 @@ LOCAL_MATCH = True
 ROOT = 'rltest-algo' if LOCAL_MATCH else ''
 MAP_COORDS_INITIAL_DICT_PATH = ROOT + '/map_coords_initial_dict.pkl'
 MAP_COORDS_PATH = ROOT + '/map_coords.pkl'
-# deploy phase actions
+# deploy phase actions.
 ATTACK_LEFT = 0
 ATTACK_RIGHT = 1
 DEFEND_TOP_LEFT = 0
