@@ -24,15 +24,14 @@
       "refundPercentage": 0.75,
       "turnsRequiredToRemove": 1,
       "upgrade": {
-        "cost1": 2.0,
-        "startHealth": 300.0
+        "startHealth": 150.0
       }
     },
     {
       "icon": "S3_encryptor",
       "iconxScale": 0.5,
       "iconyScale": 0.5,
-      "cost1": 9.0,
+      "cost1": 7.0,
       "getHitRadius": 0.01,
       "display": "encryptor",
       "shieldRange": 0,
@@ -43,7 +42,7 @@
       "turnsRequiredToRemove": 1,
       "generatesResource1": 1,
       "upgrade": {
-        "generatesResource2": 3
+        "generatesResource2": 2
       }
     },
     {
@@ -56,15 +55,14 @@
       "display": "destructor",
       "attackRange": 2.5,
       "shorthand": "DF",
-      "startHealth": 100.0,
+      "startHealth": 90.0,
       "unitCategory": 0,
       "refundPercentage": 0.75,
       "turnsRequiredToRemove": 1,
       "upgrade": {
         "cost1": 4.0,
         "attackRange": 3.5,
-        "attackDamageWalker": 15.0,
-        "startHealth": 200.0
+        "attackDamageWalker": 15.0
       }
     },
     {
@@ -167,10 +165,10 @@
     "maxBits": 150.0,
     "bitsPerRound": 5.0,
     "coresPerRound": 5.0,
-    "coresForPlayerDamage": 1,
+    "coresForPlayerDamage": 1.0,
     "startingBits": 5.0,
     "bitDecayPerRound": 0.25,
-    "startingCores": 30.0
+    "startingCores": 40.0
   },
   "misc": {
     "numBlockedLocations": 0,

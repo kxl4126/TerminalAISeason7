@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/dqn-algo/algo_strategy.py", line 1, in <module>
+    import gamelib  # NEED TO KEEP IN MIND WHICH PACKAGES AVAILABLE ON SERVER
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/dqn-algo/gamelib/__init__.py", line 22, in <module>
+    from .algocore import AlgoCore
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/dqn-algo/gamelib/algocore.py", line 7, in <module>
+    from dqn_agent import DQNAgent
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/dqn-algo/dqn_agent.py", line 1, in <module>
+    from constants import *
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/dqn-algo/constants.py", line 55, in <module>
+    with open(MAP_COORDS_PATH, 'rb') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '/map_coords.pkl'

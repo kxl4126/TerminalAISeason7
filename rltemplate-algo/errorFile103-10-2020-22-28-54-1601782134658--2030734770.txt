@@ -1,0 +1,169 @@
+---------------- Starting Your Algo --------------------
+Performing turn 0 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 1
+Resetting resources left for unit PI of cost 1.0 : 1
+Resources left for unit PI : 1
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 1
+Resetting resources left for unit SI of cost 1.0 : 1
+Resources left for unit SI : 1
+Spawned SI, now i have 0.0
+Performing turn 1 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 1
+Resetting resources left for unit PI of cost 1.0 : 2
+Resources left for unit PI : 2
+Spawned PI, now i have 1.0
+Resources left for unit PI : 1.0
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 2
+Resetting resources left for unit SI of cost 1.0 : 2
+Resources left for unit SI : 2
+Spawned SI, now i have 1.0
+Resources left for unit SI : 1.0
+Spawned SI, now i have 0.0
+Performing turn 2 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 0
+Resetting resources left for unit PI of cost 1.0 : 2
+Resources left for unit PI : 2
+Spawned PI, now i have 1.0
+Resources left for unit PI : 1.0
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 2
+Resetting resources left for unit SI of cost 1.0 : 2
+Resources left for unit SI : 2
+Spawned SI, now i have 1.0
+Resources left for unit SI : 1.0
+Spawned SI, now i have 0.0
+Performing turn 3 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+Performing turn 4 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 0
+Resetting resources left for unit PI of cost 1.0 : 1
+Resources left for unit PI : 1
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 1
+Resetting resources left for unit SI of cost 1.0 : 1
+Resources left for unit SI : 1
+Spawned SI, now i have 0.0
+taking attack action : 1
+Resetting resources left for unit PI of cost 1.0 : 1
+Resources left for unit PI : 1
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 1
+Resetting resources left for unit SI of cost 1.0 : 1
+Resources left for unit SI : 1
+Spawned SI, now i have 0.0
+Performing turn 5 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 0
+Resetting resources left for unit PI of cost 1.0 : 3
+Resources left for unit PI : 3
+Spawned PI, now i have 2.0
+Resources left for unit PI : 2.0
+Spawned PI, now i have 1.0
+Resources left for unit PI : 1.0
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 3
+Resources left for unit EI : 3
+Spawned EI, now i have 0.0
+Resetting resources left for unit SI of cost 1.0 : 3
+Resources left for unit SI : 3
+Spawned SI, now i have 2.0
+Resources left for unit SI : 2.0
+Spawned SI, now i have 1.0
+Resources left for unit SI : 1.0
+Spawned SI, now i have 0.0
+Performing turn 6 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 0
+Resetting resources left for unit PI of cost 1.0 : 1
+Resources left for unit PI : 1
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 1
+Resetting resources left for unit SI of cost 1.0 : 1
+Resources left for unit SI : 1
+Spawned SI, now i have 0.0
+Performing turn 7 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 0
+Resetting resources left for unit PI of cost 1.0 : 2
+Resources left for unit PI : 2
+Spawned PI, now i have 1.0
+Resources left for unit PI : 1.0
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 2
+Resetting resources left for unit SI of cost 1.0 : 2
+Resources left for unit SI : 2
+Spawned SI, now i have 1.0
+Resources left for unit SI : 1.0
+Spawned SI, now i have 0.0
+Performing turn 8 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 1
+Resetting resources left for unit PI of cost 1.0 : 2
+Resources left for unit PI : 2
+Spawned PI, now i have 1.0
+Resources left for unit PI : 1.0
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 2
+Resetting resources left for unit SI of cost 1.0 : 2
+Resources left for unit SI : 2
+Spawned SI, now i have 1.0
+Resources left for unit SI : 1.0
+Spawned SI, now i have 0.0
+Performing turn 9 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+Performing turn 10 of RL bot
+taking defense action : 0
+taking defense action : 1
+taking defense action : 2
+taking attack action : 1
+Resetting resources left for unit PI of cost 1.0 : 3
+Resources left for unit PI : 3
+Spawned PI, now i have 2.0
+Resources left for unit PI : 2.0
+Spawned PI, now i have 1.0
+Resources left for unit PI : 1.0
+Spawned PI, now i have 0.0
+Resetting resources left for unit EI of cost 3.0 : 3
+Resources left for unit EI : 3
+Spawned EI, now i have 0.0
+Resetting resources left for unit SI of cost 1.0 : 3
+Resources left for unit SI : 3
+Spawned SI, now i have 2.0
+Resources left for unit SI : 2.0
+Spawned SI, now i have 1.0
+Resources left for unit SI : 1.0
+Spawned SI, now i have 0.0
+Traceback (most recent call last):
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/rltest-algo/algo_strategy.py", line 247, in <module>
+    algo.start()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/rltest-algo/gamelib/algocore.py", line 75, in start
+    game_state_string = get_command()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/rltest-algo/gamelib/util.py", line 12, in get_command
+    ret = sys.stdin.readline()
+KeyboardInterrupt

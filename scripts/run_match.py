@@ -3,6 +3,8 @@ import subprocess
 import sys
 
 # Runs a single game
+
+
 def run_single_game(process_command):
     print("Start run a match")
     p = subprocess.Popen(
@@ -10,11 +12,12 @@ def run_single_game(process_command):
         shell=True,
         stdout=sys.stdout,
         stderr=sys.stderr
-        )
+    )
     # daemon necessary so game shuts down if this script is shut down by user
     p.daemon = 1
     p.wait()
     print("Finished running match")
+
 
 # Get location of this run file
 file_dir = os.path.dirname(os.path.realpath(__file__))
@@ -26,7 +29,8 @@ is_windows = sys.platform.startswith('win')
 print("Is windows: {}".format(is_windows))
 
 # Set default path for algos if script is run with no params
-default_algo = parent_dir + "\\python-algo\\run.ps1" if is_windows else parent_dir + "/python-algo/run.sh"
+default_algo = parent_dir + \
+    "\\python-algo\\run.ps1" if is_windows else parent_dir + "/python-algo/run.sh"
 algo1 = default_algo
 algo2 = default_algo
 
@@ -53,7 +57,15 @@ else:
         trailing_char = "" if algo2.endswith('/') else "/"
         algo2 = algo2 + trailing_char + "run.sh"
 
+
+algo1 = 'dqn-algo/run.sh'
+algo2 = 'python-algo/run.sh'
+
 print("Algo 1: ", algo1)
 print("Algo 2:", algo2)
 
-run_single_game("cd {} && java -jar engine.jar work {} {}".format(parent_dir, algo1, algo2))
+EPISODES = 724  # maybe only copy weights every 5 games or so?
+for i in range(EPISODES):
+    run_single_game(
+        "cd {} && java -jar engine.jar work {} {}".format(parent_dir, algo1, algo2))
+    print("Finished running " + str(i+1) + " games.")

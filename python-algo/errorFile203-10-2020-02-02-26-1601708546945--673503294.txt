@@ -1,0 +1,42 @@
+Random seed: 5176975247800422023
+---------------- Starting Your Algo --------------------
+Configuring your custom algo strategy...
+Performing turn 0 of your custom algo strategy
+Performing turn 1 of your custom algo strategy
+Performing turn 2 of your custom algo strategy
+Performing turn 3 of your custom algo strategy
+Performing turn 4 of your custom algo strategy
+Performing turn 5 of your custom algo strategy
+Performing turn 6 of your custom algo strategy
+Got scored on at: [26, 12]
+All locations: [[26, 12]]
+Got scored on at: [26, 12]
+All locations: [[26, 12], [26, 12]]
+Got scored on at: [26, 12]
+All locations: [[26, 12], [26, 12], [26, 12]]
+Performing turn 7 of your custom algo strategy
+Got scored on at: [1, 12]
+All locations: [[26, 12], [26, 12], [26, 12], [1, 12]]
+Performing turn 8 of your custom algo strategy
+Performing turn 9 of your custom algo strategy
+Got scored on at: [3, 10]
+All locations: [[26, 12], [26, 12], [26, 12], [1, 12], [3, 10]]
+Got scored on at: [3, 10]
+All locations: [[26, 12], [26, 12], [26, 12], [1, 12], [3, 10], [3, 10]]
+Performing turn 10 of your custom algo strategy
+Performing turn 11 of your custom algo strategy
+Performing turn 12 of your custom algo strategy
+Performing turn 13 of your custom algo strategy
+Performing turn 14 of your custom algo strategy
+Got scored on at: [3, 10]
+All locations: [[26, 12], [26, 12], [26, 12], [1, 12], [3, 10], [3, 10], [3, 10]]
+Performing turn 15 of your custom algo strategy
+Performing turn 16 of your custom algo strategy
+Performing turn 17 of your custom algo strategy
+Performing turn 18 of your custom algo strategy
+Traceback (most recent call last):
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/python-algo/algo_strategy.py", line 247, in <module>
+    algo.start()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/python-algo/gamelib/algocore.py", line 68, in start
+    stateType = int(state.get("turnInfo")[0])
+KeyboardInterrupt
