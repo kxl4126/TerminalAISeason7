@@ -1,0 +1,29 @@
+Using TensorFlow backend.
+2020-10-13 02:38:58.831897: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Default exploration rate: 0.3693529104644032
+---------------- Starting Your Algo --------------------
+Performing turn 0 of RL bot
+PICKING RANDOM ACTION 40
+Performing turn 1 of RL bot
+PICKING ACTION 25 with Q value of 0.13952246
+Performing turn 2 of RL bot
+PICKING ACTION 25 with Q value of 0.17053248
+Performing turn 3 of RL bot
+PICKING RANDOM ACTION 9
+Performing turn 4 of RL bot
+PICKING RANDOM ACTION 12
+Performing turn 5 of RL bot
+PICKING ACTION 37 with Q value of 0.10388558
+Performing turn 6 of RL bot
+PICKING RANDOM ACTION 7
+Performing turn 7 of RL bot
+PICKING ACTION 11 with Q value of 0.11278348
+Performing turn 8 of RL bot
+PICKING ACTION 37 with Q value of 0.103172034
+Performing turn 9 of RL bot
+PICKING ACTION 56 with Q value of 0.104607515
+Performing turn 10 of RL bot
+PICKING ACTION 56 with Q value of 0.11671602
+Performing turn 11 of RL bot
+PICKING RANDOM ACTION 33
+Got end state, game over. Stopping algo.

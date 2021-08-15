@@ -58,13 +58,13 @@ else:
         algo2 = algo2 + trailing_char + "run.sh"
 
 
-algo1 = 'dqn-algo/run.sh'
+algo1 = 'ddqn-algo/run.sh'
 algo2 = 'python-algo/run.sh'
 
 print("Algo 1: ", algo1)
 print("Algo 2:", algo2)
 
-EPISODES = 724  # maybe only copy weights every 5 games or so?
+EPISODES = 2000  # maybe only copy weights every 5 games or so?
 for i in range(EPISODES):
     run_single_game(
         "cd {} && java -jar engine.jar work {} {}".format(parent_dir, algo1, algo2))

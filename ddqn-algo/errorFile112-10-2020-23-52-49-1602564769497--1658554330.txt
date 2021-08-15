@@ -1,0 +1,20 @@
+Using TensorFlow backend.
+2020-10-12 23:52:51.490469: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Default exploration rate: 0.38672103115688494
+---------------- Starting Your Algo --------------------
+Performing turn 0 of RL bot
+PICKING ACTION 13 with Q value of 0.017568715
+Performing turn 1 of RL bot
+PICKING RANDOM ACTION 32
+Performing turn 2 of RL bot
+PICKING ACTION 53 with Q value of 0.08470467
+Performing turn 3 of RL bot
+PICKING ACTION 53 with Q value of 0.13403901
+Traceback (most recent call last):
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/algo_strategy.py", line 258, in <module>
+    algo.start()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/gamelib/algocore.py", line 83, in start
+    game_state_string = get_command()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/gamelib/util.py", line 12, in get_command
+    ret = sys.stdin.readline()
+KeyboardInterrupt

@@ -161,10 +161,16 @@ class AlgoCore(object):
                     self.memory[-1][DONE] = 1
 
                     # assign reward to every state prior
+                    # for i in range(len(self.memory)-1):
+                    #     self.memory[i][REWARD] = self.memory[-1][REWARD] / \
+                    #         len(self.memory)
                     for i in range(len(self.memory)-1):
-                        self.memory[i][REWARD] = self.memory[-1][REWARD] / \
-                            len(self.memory)
-                        # save game to memory
+                        # track health changes and give rewards accordingly
+                        reward = (self.memory[i+1][STATE][-8] - self.memory[i][STATE]
+                                  [-8]) * HEALTH_REWARD + (self.memory[i][STATE][-4] - self.memory[i+1][STATE][-4]) * HEALTH_REWARD
+                        self.memory[i][REWARD] = reward
+                    # save game to memory
+
                     with open(self.memory_debug_path, 'r+') as f:  # for debug purposes
                         original = f.read().split('\n')
                         f.seek(0, 0)
@@ -198,8 +204,6 @@ class AlgoCore(object):
                     #     self.agent.NN.model.layers[-1].get_weights()[0][0])
                     # if self.agent.NN.model.layers[-1].get_weights()[0].tolist() == self.test:
                     #     debug_write("SFFSAFASFASMFASJFKASF")
-                    assert self.agent.NN.model.layers[-1].get_weights(
-                    )[0].tolist() != self.initial_weights.tolist()
                     if TRAINING:
                         if sum(results) % WEIGHT_TRANSFER_FREQ == 0:
                             debug_write("Saving weights...")

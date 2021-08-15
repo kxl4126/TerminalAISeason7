@@ -39,7 +39,7 @@ class Memory():
             with open(MEMORY_PATH, 'rb') as f:
                 self.buffer = pickle.load(f)
 
-    def sample(self, batch_size=32):
+    def sample(self, batch_size=BATCH_SIZE):
         if len(self.buffer) < batch_size:
             return []
         idx = np.random.choice(np.arange(len(self.buffer)),
@@ -57,7 +57,7 @@ class DQNAgent():
 
     def pick_action(self, state, exploration_rate=DEFAULT_EXPLORATION_RATE):
         state = np.reshape(state, (-1, STATE_SIZE))
-        if TRAINING and random.uniform(0, 1) < exploration_rate:
+        if random.uniform(0, 1) < exploration_rate:  # and TRAINING
             action = random.randint(0, NUM_ACTIONS - 1)
             gamelib.debug_write("PICKING RANDOM ACTION " + str(action))
         else:
@@ -67,7 +67,7 @@ class DQNAgent():
                 "PICKING ACTION " + str(action) + " with Q value of " + str(Q_vals[action]))
         return action
 
-    def train_on_memory(self, batch_size=32):
+    def train_on_memory(self, batch_size=BATCH_SIZE):
         memory = Memory()  # maybe move this to init and say self.memory = Memory()
         inputs = np.zeros((batch_size, STATE_SIZE))
         targets = np.zeros((batch_size, NUM_ACTIONS))
@@ -85,7 +85,8 @@ class DQNAgent():
                 target = reward + self.gamma * np.amax(next_Qs)
             targets[i] = self.NN.model.predict(state)
             targets[i][action] = target
-        self.NN.model.fit(inputs, targets, epochs=1, verbose=0)
+        self.NN.model.fit(inputs, targets, epochs=1,
+                          verbose=0, batch_size=batch_size)
 
     def transfer_weights(self):
         self.tgt_NN.model.set_weights(self.NN.model.get_weights())

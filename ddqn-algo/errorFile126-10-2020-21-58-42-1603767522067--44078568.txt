@@ -1,0 +1,40 @@
+Using TensorFlow backend.
+2020-10-26 21:58:45.834000: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Default exploration rate: 0.3692810470688894
+---------------- Starting Your Algo --------------------
+Performing turn 0 of RL bot
+PICKING ACTION 13 with Q value of 0.017568715
+Traceback (most recent call last):
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/algo_strategy.py", line 258, in <module>
+    algo.start()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/gamelib/algocore.py", line 105, in start
+    game_state_string)
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/algo_strategy.py", line 174, in on_turn
+    self.agent.train_on_memory()
+  File "/Users/kevinli/TerminalAI/TerminalSeason7/ddqn-algo/ddqn_agent.py", line 97, in train_on_memory
+    verbose=0, batch_size=batch_size)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/keras/engine/training.py", line 1213, in fit
+    self._make_train_function()
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/keras/engine/training.py", line 316, in _make_train_function
+    loss=self.total_loss)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/keras/legacy/interfaces.py", line 91, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py", line 75, in symbolic_fn_wrapper
+    return func(*args, **kwargs)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/keras/optimizers.py", line 536, in get_updates
+    m_t = (self.beta_1 * m) + (1. - self.beta_1) * g
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/ops/variables.py", line 1046, in _run_op
+    return tensor_oper(a.value(), *args, **kwargs)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 855, in value
+    return self._read_variable_op()
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/ops/resource_variable_ops.py", line 939, in _read_variable_op
+    self._dtype)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/ops/gen_resource_variable_ops.py", line 587, in read_variable_op
+    "ReadVariableOp", resource=resource, dtype=dtype, name=name)
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py", line 410, in _apply_op_helper
+    with g.as_default(), ops.name_scope(name) as scope:
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 6191, in __enter__
+    self._g_manager = g.as_default()
+  File "/Users/kevinli/TerminalAI/venv/lib/python3.6/site-packages/tensorflow/python/framework/func_graph.py", line 283, in as_default
+    @tf_contextlib.contextmanager
+KeyboardInterrupt

@@ -1,7 +1,8 @@
 import pickle
+import numpy as np
 # configs
-LOCAL_MATCH = True
-TRAINING = True
+LOCAL_MATCH = False
+TRAINING = False
 # root changes depending if its on server or local run match
 ALGO_NAME = 'dqn-algo'
 ROOT = ALGO_NAME if LOCAL_MATCH else ''
@@ -77,8 +78,15 @@ STATE_SIZE = 1268
 WEIGHT_TRANSFER_FREQ = 10
 with open(RESULTS_PATH, 'r') as f:
     results = [int(x) for x in f.read().split(',')]
-DEFAULT_EXPLORATION_RATE = (2000-sum(results))/2000
-
+EXPLORE_START = 1.0
+EXPLORE_STOP = 0.01
+DECAY_RATE = 0.0002
+TRAIN_EPISODES = 2000
+# DEFAULT_EXPLORATION_RATE = EXPLORE_STOP + \
+#     (EXPLORE_START - EXPLORE_STOP)*np.exp(-DECAY_RATE*sum(results))
+DEFAULT_EXPLORATION_RATE = 0.5
+BATCH_SIZE = 64
+HEALTH_REWARD = 0.5
 # RL Indices
 
 STATE = 0
